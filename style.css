@@ -1,0 +1,140 @@
+body {
+	padding:0;
+	margin:0;
+	overflow:hidden;
+}
+iframe {
+  height: 100%;
+  width: 100%;
+  border:0;
+}
+#selected {
+
+}
+#deselected {
+
+}
+#add {
+  position:absolute;
+  bottom:0px;
+  right:50px;
+  height:60px;
+  width:50px;
+  background-color:green;
+  text-align:center;
+  color:white;
+  font-size:50px;
+  font-weight:bold;
+  cursor:pointer;
+}
+.handle {
+  position:absolute;
+  top:0px;
+  right:20px;
+  height:20px;
+  width:20px;
+  background-color:green;
+  background-image:url('images/handle.png');
+  cursor:pointer;
+}
+.close {
+  position:absolute;
+  top:0px;
+  right:0px;
+  height:20px;
+  width:20px;
+  background-color:red;
+  background-image:url('images/close.png');
+  cursor:pointer;
+}
+.expandx {
+  position:absolute;
+  top:0px;
+  right:60px;
+  height:20px;
+  width:20px;
+  background-color:grey;
+  background-image:url('images/expandx.png');
+  cursor:pointer;
+}
+.expandy {
+  position:absolute;
+  top:60px;
+  right:0px;
+  height:20px;
+  width:20px;
+  background-color:grey;
+  background-image:url('images/expandy.png');
+  cursor:pointer;
+}
+.contractx {
+  position:absolute;
+  top:0px;
+  right:80px;
+  height:20px;
+  width:20px;
+  background-color:grey;
+  background-image:url('images/contractx.png');
+  cursor:pointer;
+}
+.contracty {
+  position:absolute;
+  top:40px;
+  right:0px;
+  height:20px;
+  width:20px;
+  background-color:grey;
+  background-image:url('images/contracty.png');
+  cursor:pointer;
+}
+#wrap {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:black;
+}
+#window {
+    display:block;
+    position:absolute;
+    height:auto;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin:10px;
+    background-color:white;
+	text-align:center;
+}
+ul.ss-container {
+  position: absolute;
+  top:-16px;
+  width: 100%;
+  list-style-type: none;
+}
+
+ul.ss-container li {
+  background: rgb(0,0,0);
+  position: absolute;
+  border-radius:5px;
+  border-bottom:1px solid rgba(0, 0, 0, .5);
+  border-right:2px solid rgba(0, 0, 0, .5);
+  border-top:2px solid rgba(255, 255, 255, .5);
+  border-left:2px solid rgba(255, 255, 255, .5);
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ul.ss-container li.ss-dragged-child {
+  cursor: move;
+  z-index: 9999;
+  opacity: .7;
+}
+ul.ss-container li.ss-dragged-child iframe {
+  pointer-events:none;
+}
+
+ul.ss-container li.ss-placeholder-child {
+  background-color:grey;
+  border-radius:0px;
+}
